@@ -10,8 +10,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - mvn install
+      - npm install
   post_build:
     commands:
       - echo Build completed on `date`
-      - mvn sonar:sonar -Dsonar.login=d7063144e831c0f8e214c21e4a13afaa97beb67e -Dsonar.host.url=http://18.220.196.198:9000
+      - npm sonar:sonar -Dsonar.login=d7063144e831c0f8e214c21e4a13afaa97beb67e -Dsonar.host.url=http://18.220.196.198:9000
